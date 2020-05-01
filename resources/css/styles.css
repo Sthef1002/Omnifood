@@ -487,3 +487,84 @@ input[type=checkbox] {
 
 /* to remove blue outline when clicking on field */
 *:focus {outline: none;}
+
+
+
+
+/*--------------------------------*/
+/* FOOTER */
+/*--------------------------------*/
+
+footer {
+    background-color: #333;
+    padding: 50px;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-link {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-link li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-link li:last-child {
+    margin: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-link li a:link,
+.social-link li a:visited {
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-link li a:link,
+.social-link li a:visited {
+    font-size: 160%;
+}
+
+.im-facebook,
+.im-twitter,
+.im-google-plus,
+.im-instagram {
+    transition: color 0.2s;
+}
+
+
+.im-facebook:hover {
+    color: #3b5998;
+}
+
+.im-twitter:hover {
+    color: #00aced;
+}
+
+.im-google-plus:hover {
+    color: #dd4b39;
+}
+
+.im-instagram:hover {
+    color: #517fa4;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 30px;
+}
