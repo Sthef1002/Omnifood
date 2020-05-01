@@ -106,6 +106,32 @@ h2:after {
     
 }
 
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;  
+  font-size: 120%;  
+  line-height: 120%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* -----LINKS----- */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555555;
+    border-bottom: 1px solid transparent;
+}
+
 /* -----BUTTONS----- */
 .btn:link, 
 .btn:visited {
@@ -311,6 +337,10 @@ header {
     margin-right: 10px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 /*--------------------------------*/
 /* CITIES */
 /*--------------------------------*/
@@ -325,6 +355,7 @@ header {
     margin-bottom: 5px;
 }
 
+<<<<<<< HEAD
 
 /*--------------------------------*/
 /* TESTIMONIALS */
@@ -367,3 +398,5 @@ cite img {
     margin-right: 10px;
     vertical-align: middle;
 }
+=======
+>>>>>>> master
