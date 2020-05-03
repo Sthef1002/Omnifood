@@ -330,7 +330,7 @@ header {
     width: 55px;
     text-align: center;
     padding: 5px;
-    float: left;
+    /* float: left; */
     font-size: 150%;
     margin-right: 25px;
 }
