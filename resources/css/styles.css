@@ -9,12 +9,15 @@
     box-sizing: border-box;
 }
 
-html {
-    color: #555555;
-    font-family: 'Lato', 'Arial', 'sans-serif';
-    font-size: 20px;
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
+    font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix {zoom: 1}
@@ -107,14 +110,17 @@ h2:after {
 }
 
 .icon-small {
-  display: inline-block;
-  width: 30px;
-  text-align: center;
-  color: #e67e22;  
-  font-size: 80%;  
-  line-height: 120%;
-  vertical-align: middle;
-  margin-right: 10px;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /*secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
 }
 
 /* -----LINKS----- */
@@ -124,6 +130,10 @@ a:visited {
     color: #e67e22;
     text-decoration: none;
     transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
 }
 
 a:hover,
@@ -169,14 +179,13 @@ input[type=submit]:active {
 
 .btn-full:hover, 
 .btn-full:active {
-    background-color: #Cf6d17;
-    border: 1px solid  #Cf6d17;
+    border: 1px solid #cf6d17;
+
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
     border: 1px solid  #Cf6d17;
-    color: #Cf6d17;
     color: #fff;
 }
 
@@ -203,6 +212,9 @@ header {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -258,23 +270,35 @@ header {
     border-bottom: 2px solid #e67e22;
 }  
 
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
 
-/* Sticky nav */
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+}
+
+/* Sticky navi */
 .sticky {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.982);
-    box-shadow: 0 2px 2px rgb(242, 242, 242);
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
 }
 
 .sticky .main-nav { margin-top: 18px; }
 
-.sticky li a:link,
-.sticky li a:visited  {
-    padding: 18px 0px;
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
     color: #555;
 }
 
@@ -332,6 +356,10 @@ header {
     -moz-transition: transform 0.5s, opacity 0.5s;
     -ms-transition: transform 0.5s, opacity 0.5s;
     -o-transition: transform 0.5s, opacity 0.5s;
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
 }
 
 .meal-photo img:hover {
@@ -352,13 +380,17 @@ header {
     background-color: rgb(240, 240, 240);
 }
 
+.steps-box {
+    margin-top: 30px;
+}
+
 .steps-box:first-child {
     text-align: right;
     padding-right: 3%;
-    margin-top: 30px;  
 }
 
 .steps-box:last-child {
+    text-align: left;
     padding-left: 3%;
     margin-top: 70px;
 }
@@ -376,17 +408,22 @@ header {
 }
 
 .works-steps div {
-    color: #e67e22;
     border: 2px solid #e67e22;
-    display: inline-block;
     border-radius: 50%;
+    color: #e67e22;
+    font-size: 150%;
     height: 55px;
+    display: inline-block;
     width: 55px;
     text-align: center;
     padding: 5px;
     /* float: left; */
-    font-size: 150%;
     margin-right: 25px;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
 }
 
 .btn-app img{
@@ -435,7 +472,7 @@ blockquote::before {
     display: block;
     position: absolute;
     top: -5px;
-    left: 0;
+    left: -5px;
 
 }
 
@@ -467,6 +504,7 @@ cite img {
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
+
 }
 
 .plan-box div {
@@ -552,6 +590,7 @@ input[type=checkbox] {
 footer {
     background-color: #333;
     padding: 50px;
+    font-size: 80%;
 }
 
 .footer-nav {
@@ -579,7 +618,9 @@ footer {
 .footer-nav li a:visited,
 .social-link li a:link,
 .social-link li a:visited {
+    border: 0;
     color: #888;
+    text-decoration: none;
     transition: color 0.2s;
     -webkit-transition: color 0.2s;
     -moz-transition: color 0.2s;
@@ -630,3 +671,32 @@ footer p {
     text-align: center;
     margin-top: 30px;
 }
+
+
+
+
+/* --------------------------------- */
+/* Animations */
+/* --------------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3
+{
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
+
+
